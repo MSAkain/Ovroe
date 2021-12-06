@@ -1,0 +1,145 @@
+.header {
+	margin-bottom: 190px;
+
+	&__top {
+		background-color: $main-color;
+		color: $white;
+		text-align: center;
+		padding-top: 16px;
+		padding-bottom: 15px;
+	}
+
+	&__bottom {
+		padding: 24px 0;
+		text-transform: uppercase;
+
+		button {
+			text-transform: uppercase;
+		}
+	}
+
+	&__nav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__list {
+		max-width: 526px;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__item {
+		&:not(:last-child) {
+			margin-right: 20px;
+		}
+	}
+
+	&__link {
+		padding-bottom: 5px;
+		position: relative;
+
+		&::before {
+			content: '';
+			position: absolute;
+			border-bottom: 2px solid $main-color;
+			width: 0;
+			transition: width 0.5s;
+			bottom: 0;
+		}
+
+		&:hover {
+			&::before {
+				width: 100%;
+			}
+		}
+	}
+
+
+	&__panel {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__form {
+		width: 304px;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		margin-right: 50px;
+		position: relative;
+	}
+
+	&__input {
+		outline: none;
+		border: none;
+		width: 75px;
+		border-bottom: 4px solid transparent;
+		transition: border-color 0.5s, width 0.5s, padding 0.5s;
+		
+		
+
+		&::placeholder {
+			font-size: 16px;
+			text-transform: uppercase;
+			color: $main-color;
+		}
+
+		&--active {
+			border-color: $main-color;
+			width: 306px;
+			padding-right: 25px;
+			padding-bottom: 11px;
+		}
+	}
+
+	&__search {
+		position: absolute;
+		right: -13px;
+		transition: right 0.5s, top 0.5s;
+
+		&--active {
+			right: 0;
+			top: 0;
+		}
+	}
+
+	&__btn {
+		margin-bottom: 3px;
+		&:not(:last-child) {
+			margin-right: 50px;
+		}
+	}
+
+	&__hero {
+		mix-blend-mode: luminosity;
+		background-repeat: no-repeat;
+		
+	}
+
+	&__content {
+		height: 85vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__title {
+		margin-bottom: 9px;
+	}
+
+	&__text {
+		text-align: center;
+		max-width: 260px;
+		margin-bottom: 46px;
+	}
+
+	&__button {
+		max-width: 250px;
+	}
+}
+

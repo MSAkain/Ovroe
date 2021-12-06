@@ -1,0 +1,47 @@
+.arrivals {
+	position: relative;
+		&__box {
+			max-width: 470px;
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-end;
+			margin-bottom: 80px;
+		}
+
+		&__ref {
+			text-decoration: underline;
+			transition: opacity 0.5s;
+
+			&:hover {
+				opacity: 0.5;
+			}
+		}
+
+		&__list {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 190px;
+			margin: 0 -13px;
+		}
+
+		.slick-arrow {
+			position: absolute;
+			top: -100px;
+			z-index: 5;
+		}
+		
+		.arrow-left {
+			right: 10px;
+		}
+		
+		.arrow-right {
+			right: 100px;
+		}
+
+		.slick-slide {
+			padding: 0 13px;
+		} 
+	
+
+}
+
