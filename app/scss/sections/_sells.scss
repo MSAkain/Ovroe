@@ -1,0 +1,32 @@
+.sells {
+
+	&__box {
+		display: flex;
+		align-items: flex-end;
+	}
+
+	&__photo {
+		margin-right: 140px;
+	}
+
+	&__content {
+		max-width: 320px;
+		margin-bottom: 96px;
+	}
+
+	&__title {
+		margin-bottom: 11px;
+	}
+
+	&__info {
+		text-transform: uppercase;
+		display: block;
+		margin-bottom: 44px;
+		font-weight: 500;
+	}
+
+	&__button {
+		max-width: 225px;
+	}
+}
+

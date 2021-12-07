@@ -1,0 +1,33 @@
+.plussize {
+
+	&__list {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__item {
+		max-width: 470px;
+		width: 100%;
+
+		&--info {
+			max-width: 465px;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
+			margin-bottom: 165px;
+		}
+	}
+
+	&__title {
+		margin-bottom: 14px;
+	}
+
+	&__text {
+		margin-bottom: 46px;
+	}
+
+	&__button {
+		max-width: 225px;
+	}
+}
+

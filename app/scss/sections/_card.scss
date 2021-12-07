@@ -5,31 +5,20 @@
 		height: 100%;
 		margin-bottom: 23px;
 		display: block;
-		position: relative;
-
-		&::before {
-			content: 'Bestsellers';
-			font-size: 0;
-			text-transform: uppercase;
-			font-weight: 500;
-			position: absolute;
-			width: 100%;
-			height: 100%;
-			border: 4px solid transparent;
-			background-color: transparent;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			transition: font-size 0.5s, border-color 0.5s, background-color 0.5s;
-		}
 
 		&:hover {
-			&::before {
+			.card__backside {
 				font-size: 26px;
 				background-color: $white;
 				border-color: $main-color;
 			}
 		}
+	}
+
+	&__photo {
+		position: relative;
+		width: 100%;
+		height: 100%;
 	}
 
 	&__subtitle {
@@ -39,10 +28,23 @@
 	}
 
 	&__backside {
-		position: absolute;
-		font-weight: 500;
-		font-size: 26px;
+		font-size: 0;
 		text-transform: uppercase;
-		top: 50%;
+		font-weight: 500;
+		position: absolute;
+		text-align: center;
+		width: 100%;
+		height: 100%;
+		border: 4px solid transparent;
+		background-color: transparent;
+		display: flex;
+		justify-content: center;
+		top: 0;
+		align-items: center;
+		transition: font-size 0.5s, border-color 0.5s, background-color 0.5s;
+	}
+
+	&__link {
+		text-decoration: underline;
 	}
 }
