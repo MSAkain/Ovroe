@@ -151,6 +151,12 @@
 
 	&__category {
 		opacity: 0.5;
+		transition: opacity 0.5s;
+
+		&:hover {
+			opacity: 1;
+		}
+
 		&:not(:last-child) {
 			margin-right: 20px;
 		}
@@ -166,7 +172,7 @@
 
 		sup {
 			font-weight: 600;
-			color: rgba(0, 0, 0, 0.5);
+			color: rgba($main-color, 0.5);
 			font-size: 16px;
 		}
 	}

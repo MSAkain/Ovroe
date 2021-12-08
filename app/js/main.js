@@ -21,4 +21,9 @@ $(function () {
 		$('.header__search').toggleClass('header__search--active')
 	});
 
+	$('.catalog__category--color').click(function () {
+		$($(this)).toggleClass('catalog__category--active')
+		$('.filter-color').toggleClass('filter-color--active')
+	});
+
 });

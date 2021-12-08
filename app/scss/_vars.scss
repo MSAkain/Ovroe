@@ -4,7 +4,30 @@
 
 
 $main-color: #000;
-$white: #fff; 
+$white: #fff;
+$grey-2: #C4C4C4;
+$beiges: #DDCBB3;
+$khaki: #D2AC56;
+$pinks: #DFAFDA;
+$metallic: rgba(#BEBEBE, 0.2);
+$purple: #800080;
+$blues: #5C7FD6;
+$yellow: #FFF95D;
+$brown: #964B00;
+$mustard: #DC9433;
+$red: #D23232;
+$green: #8A9A5B;
+$orange: #FFA500;
+$grey: #BEBEBE;
+
+
+%checkbox-hidden {
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	position: absolute;
+}
 
 
 

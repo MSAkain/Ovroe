@@ -16,11 +16,22 @@
 
 		&::before {
 			content: '+';
+			color: $main-color;
+			font-weight: 500;
 			position: absolute;
 			font-size: 21px;
 			right: 0;
 			top: -3px;
 		}
+
+		&--active {
+			&::before {
+				content: '—';
+				font-size: 15px;
+				top: 0;
+			}
+		}
+
 		&--color {
 			margin-right: 50px;
 		}
@@ -28,17 +39,6 @@
 		&--size {
 			margin-right: 44px;
 		}
-
-		&--browse {
-
-		}
-
-		&--sor {
-
-		}
-	}
-
-	&__button {
 	}
 
 	&__list {
