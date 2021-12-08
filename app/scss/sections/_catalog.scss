@@ -1,0 +1,60 @@
+.catalog {
+
+	&__fillter {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 21px;
+	}
+
+	&__item {
+		display: flex;
+	}
+
+	&__category {
+		position: relative;
+		padding-right: 25px;
+
+		&::before {
+			content: '+';
+			position: absolute;
+			font-size: 21px;
+			right: 0;
+			top: -3px;
+		}
+		&--color {
+			margin-right: 50px;
+		}
+
+		&--size {
+			margin-right: 44px;
+		}
+
+		&--browse {
+
+		}
+
+		&--sor {
+
+		}
+	}
+
+	&__button {
+	}
+
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 46px 25px;
+		margin-bottom: 96px;
+	}
+
+	&__bottom {
+		display: flex;
+		justify-content: center;
+	}
+
+	&__btn {
+		max-width: 225px;
+	}
+}
+

@@ -141,5 +141,38 @@
 	&__button {
 		max-width: 250px;
 	}
+
+	&__fillters {
+		display: flex;
+		padding-top: 16px;
+		border-top: 1px solid rgba($main-color, 0.2);
+		margin-bottom: 94px;
+	}
+
+	&__category {
+		opacity: 0.5;
+		&:not(:last-child) {
+			margin-right: 20px;
+		}
+
+		&--active {
+			opacity: 1;
+		}
+	}
+
+	&__title {
+		line-height: 0.9;
+		display: flex;
+
+		sup {
+			font-weight: 600;
+			color: rgba(0, 0, 0, 0.5);
+			font-size: 16px;
+		}
+	}
+
+	&__emptiness {
+		width: 181px;
+	}
 }
 

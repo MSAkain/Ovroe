@@ -47,4 +47,71 @@
 	&__link {
 		text-decoration: underline;
 	}
+
+	&__colors {
+		display: flex;
+		margin-top: 11px;
+	}
+
+	&__color {
+		display: block;
+		width: 15px;
+		height: 15px;
+		background-color: $white;
+		border: 1px solid $main-color;
+
+		&:not(:last-child) {
+			margin-right: 10px;
+		}
+
+		&--orange {
+			border-color: #D2AC56;
+			background-color: #D2AC56;
+		}
+
+		&--green {
+			border-color: #8A9A5B;
+			background-color: #8A9A5B;
+		}
+
+		&--yellow {
+			border-color: #FFF95D;
+			background-color: #FFF95D;
+		}
+
+		&--beige {
+			border-color: #DDCBB3;
+			background-color: #DDCBB3;
+		}
+
+		&--lavender {
+			border-color: #DFAFDA;
+			background-color: #DFAFDA;
+		}
+
+		&--red {
+			border-color: #D23232;
+			background-color: #D23232;
+		}
+
+		&--black {
+			border-color: $main-color;
+			background-color: $main-color;
+		}
+
+		&--gold {
+			border-color: #DC9433;
+			background-color: #DC9433;
+		}
+
+		&--gray {
+			border-color: #BEBEBE;
+			background-color: #BEBEBE;
+		}
+
+		&--blue {
+			border-color: #5C7FD6;
+			background-color: #5C7FD6;
+		}
+	}
 }
