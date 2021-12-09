@@ -5,17 +5,24 @@
 @import 'global';
 
 
+
+@import 'filters/filter-browse';
+@import 'filters/filter-color';
+@import 'filters/filter-size';
+@import 'filters/filter-sort';
+@import 'articles/card';
 @import 'sections/header';
 @import 'sections/footer';
 @import 'sections/arrivals';
-@import 'sections/card';
 @import 'sections/plussize';
 @import 'sections/category';
 @import 'sections/sells';
 @import 'sections/instagram';
 @import 'sections/breadcrumbs';
 @import 'sections/catalog';
-@import 'sections/filters';
+@import 'sections/filter';
+
+
 
 
 

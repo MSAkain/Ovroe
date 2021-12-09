@@ -1,0 +1,79 @@
+.filter-color {
+	min-height: 264px;
+
+	&__main {
+		grid-template-columns: repeat(3, 1fr);
+		gap: 15px 105px;
+		margin-bottom: 55px;
+	}
+
+	&__input {
+		@extend %checkbox-hidden;
+
+		&:checked + .filter-color__checkbox{
+			background-image: url('../images/icons/checkbox.svg');
+			background-repeat: no-repeat;
+			background-position: center;
+			fill: $white;
+		}
+	}
+
+	&__checkbox {
+	
+		&--beiges {
+			background-color: $beiges;
+		}
+
+		&--khaki {
+			background-color: $khaki;
+		}
+
+		&--pinks {
+			background-color: $pinks;
+		}
+
+		&--metallic {
+			background-color: $metallic;
+		}
+
+		&--purple {
+			background-color: $purple;
+		}
+
+		&--black {
+			background-color: $main-color;
+		}
+
+		&--blues {
+			background-color: $blues;
+		}
+
+		&--yellow {
+			background-color: $yellow;
+		}
+
+		&--brown {
+			background-color: $brown;
+		}
+
+		&--mustard {
+			background-color: $mustard;
+		}
+
+		&--red {
+			background-color: $red;
+		}
+
+		&--green {
+			background-color: $green;
+		}
+
+		&--orange {
+			background-color: $orange;
+		}
+
+		&--grey {
+			background-color: $grey;
+		}
+	}
+}

@@ -1,0 +1,36 @@
+.sort {
+	position: absolute;
+	min-height: 263px;
+	background-color: $white;
+	border: 1px solid rgba($main-color, 0.2);
+	bottom: 165px;
+	right: 201px;
+	opacity: 0;
+	transition: opacity 0.5s linear;
+
+	&--active {
+		opacity: 1;
+		z-index: 4;
+	}
+
+	&__list {
+		padding: 23px 25px;
+	}
+
+	&__item {
+		text-align: right;
+		&:not(:last-child) {
+			margin-bottom: 14px;
+		}
+	}
+
+	&__button {
+		color: rgba($main-color, 0.5);
+		font-size: 13px;
+		transition: color 0.5s;
+
+		&:hover {
+			color: $main-color;
+		}
+	}
+}

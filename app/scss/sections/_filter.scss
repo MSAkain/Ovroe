@@ -1,0 +1,56 @@
+.filter {
+	position: absolute;
+	max-width: 720px;
+	width: 100%;
+	background-color: $white;
+	border: 1px solid rgba($main-color, 0.2);
+	z-index: 4;
+	bottom: 116px;
+	transform: translateX(-500%);
+	opacity: 0;
+	transition: transform 0.5s, opacity 0.8s linear;
+
+		&--active {
+			opacity: 1;
+			transform: translateX(0);
+		}
+
+	&__label {
+		display: flex;
+
+			&:last-child {
+				border-bottom: none;
+				padding-bottom: 0;
+			}
+	}
+
+	&__main {
+		padding: 25px 25px 25px 25px;
+		display: grid;
+	}
+
+	&__text {
+		font-size: 13px;
+		padding-left: 25px;
+		position: relative;
+		color: rgba($main-color, 0.5);
+	}
+
+	&__checkbox {
+		width: 15px;
+		height: 15px;
+		position: absolute;
+		right: -15px;
+		bottom: -16px;
+	}
+
+	&__box {
+		position: absolute
+	}
+
+	&__bottom {
+		display: flex;
+	}
+}
+
+
