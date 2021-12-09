@@ -46,6 +46,13 @@
 		}
 	}
 
+	&__card {
+
+		&--hidden {
+			display: none;
+		}
+	}
+
 	&__list {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
@@ -60,6 +67,10 @@
 
 	&__btn {
 		max-width: 225px;
+
+		&.hide {
+			display: none;
+		}
 	}
 }
 

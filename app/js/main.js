@@ -62,4 +62,17 @@ $(function () {
 		$('.catalog__category--color').removeClass('catalog__category--active')
 		$('.catalog__category--size').removeClass('catalog__category--active')
 	});
+
+
+
+	$(function () {
+		var $cards = $('.catalog__list').find('.catalog__card'),
+			cardsRange = 12;
+
+		$cards.slice(cardsRange).addClass('catalog__card--hidden');
+
+		$('.catalog__btn').click(function () {
+			$cards.slice(cardsRange).toggleClass('catalog__card--hidden');
+		});
+	});
 });
