@@ -10,7 +10,8 @@
 		display: flex;
 	}
 
-	&__category {
+	&__category,
+	&__select {
 		position: relative;
 		padding-right: 25px;
 
@@ -38,6 +39,10 @@
 
 		&--size {
 			margin-right: 44px;
+		}
+
+		&--sort {
+			position: relative;
 		}
 	}
 

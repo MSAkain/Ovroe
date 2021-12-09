@@ -1,0 +1,237 @@
+.filter {
+	position: absolute;
+	max-width: 720px;
+	width: 100%;
+	background-color: $white;
+	border: 1px solid rgba($main-color, 0.2);
+	z-index: 4;
+	bottom: 102px;
+	transform: translateX(-500%);
+	opacity: 0;
+	transition: transform 0.5s, opacity 0.8s linear;
+
+	&--active {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+.filter-label {
+	display: flex;
+
+		&:last-child {
+			border-bottom: none;
+			padding-bottom: 0;
+		}
+}
+
+.filter-main {
+	padding: 25px 25px 25px 25px;
+	display: grid;
+}
+
+.filter-text {
+	font-size: 13px;
+	padding-left: 25px;
+	position: relative;
+	color: rgba($main-color, 0.5);
+}
+
+.filter-checkbox {
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	right: -15px;
+	bottom: -16px;
+}
+
+.filter-box {
+	position: absolute
+}
+
+.filter-bottom {
+	display: flex;
+}
+
+
+
+.filter-color {
+	min-height: 264px;
+
+	&__main {
+		grid-template-columns: repeat(3, 1fr);
+		gap: 15px 105px;
+		margin-bottom: 55px;
+	}
+
+	&__input {
+		@extend %checkbox-hidden;
+
+		&:checked + .filter-color__checkbox{
+			background-image: url('../images/icons/checkbox.svg');
+			background-repeat: no-repeat;
+			background-position: center;
+			fill: $white;
+		}
+	}
+
+	&__checkbox {
+	
+		&--beiges {
+			background-color: $beiges;
+		}
+
+		&--khaki {
+			background-color: $khaki;
+		}
+
+		&--pinks {
+			background-color: $pinks;
+		}
+
+		&--metallic {
+			background-color: $metallic;
+		}
+
+		&--purple {
+			background-color: $purple;
+		}
+
+		&--black {
+			background-color: $main-color;
+		}
+
+		&--blues {
+			background-color: $blues;
+		}
+
+		&--yellow {
+			background-color: $yellow;
+		}
+
+		&--brown {
+			background-color: $brown;
+		}
+
+		&--mustard {
+			background-color: $mustard;
+		}
+
+		&--red {
+			background-color: $red;
+		}
+
+		&--green {
+			background-color: $green;
+		}
+
+		&--orange {
+			background-color: $orange;
+		}
+
+		&--grey {
+			background-color: $grey;
+		}
+	}
+}
+
+
+.filter-size {
+	
+	&__main {
+		padding: 15px 25px 25px 25px;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(7, 1fr);
+		gap: 15px 0;
+	}
+
+	&__label {
+
+		&:last-child {
+			grid-row: 1 / 7;
+			grid-column: 3;
+		}
+	}
+
+	&__input {
+		@extend %checkbox-hidden;
+
+		&:checked + .filter-size__checkbox{
+			background-image: url('../images/icons/checkmark.svg');
+			background-repeat: no-repeat;
+			background-position: center;
+			border-color: $main-color;
+		}
+	}
+
+	&__checkbox {
+		border: 1px solid rgba($main-color, 0.2);
+	}
+}
+
+.filter-browse {
+	
+	&__main {
+		padding: 15px 25px 25px 25px;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 15px 10px;
+	}
+
+	&__input {
+		@extend %checkbox-hidden;
+
+		&:checked + .filter-browse__checkbox{
+			background-image: url('../images/icons/checkmark.svg');
+			background-repeat: no-repeat;
+			background-position: center;
+			border-color: $main-color;
+		}
+	}
+
+	&__checkbox {
+		border: 1px solid rgba($main-color, 0.2);
+	}
+}
+
+.sort {
+	position: absolute;
+	min-height: 263px;
+	background-color: $white;
+	border: 1px solid rgba($main-color, 0.2);
+	bottom: 165px;
+	right: 200px;
+	z-index: 4;
+	transform: translateX(500%);
+	opacity: 0;
+	transition: transform 0.5s, opacity 0.8s linear;
+
+	&--active {
+		opacity: 1;
+		transform: translateX(0);
+	}
+
+	&__list {
+		padding: 23px 25px;
+	}
+
+	&__item {
+		text-align: right;
+		&:not(:last-child) {
+			margin-bottom: 14px;
+		}
+	}
+
+	&__button {
+		color: rgba($main-color, 0.5);
+		font-size: 13px;
+		transition: color 0.5s;
+
+		&:hover {
+			color: $main-color;
+		}
+	}
+}
+
+
