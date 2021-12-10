@@ -75,4 +75,19 @@ $(function () {
 			$cards.slice(cardsRange).toggleClass('catalog__card--hidden');
 		});
 	});
+
+	$('.cart__input').styler();
+
+
+	$('.header__btn--cart').click(function () {
+		$('.cart').addClass('cart--active')
+		$('.header').addClass('opacity')
+		$('body').addClass('hidden')
+	});
+
+	$('.cart__close').click(function () {
+		$('.cart').removeClass('cart--active')
+		$('.header').removeClass('opacity')
+		$('body').removeClass('hidden')
+	})
 });
