@@ -1,6 +1,19 @@
 .header {
 	margin-bottom: 190px;
 
+
+	&--product {
+		margin-bottom: 0;
+		
+
+		.header__bottom {
+			padding-top: 74px;
+			padding-bottom: 24px;
+			border-bottom: 1px solid rgba($main-color, 0.2);
+			margin-bottom: 97px;
+		}
+	}
+
 	&__top {
 		background-color: $main-color;
 		color: $white;
@@ -65,7 +78,7 @@
 	}
 
 	&__form {
-		width: 304px;
+		width: 249px;
 		display: flex;
 		justify-content: flex-end;
 		align-items: center;
@@ -179,6 +192,13 @@
 
 	&__emptiness {
 		width: 181px;
+	}
+
+	&__ref {
+		display: block;
+		margin-top: 40px;
+		margin-bottom: 15px;
+		text-decoration: underline;
 	}
 }
 

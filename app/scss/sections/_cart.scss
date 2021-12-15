@@ -4,9 +4,14 @@
 	width: 100%;
 	background-color: $white;
 	top: 75px;
+	right: 0;
 	z-index: 16;
 	transform: translateY(-500%);
 	transition: transform 0.5s;
+
+	&--product {
+		top: 0;
+	}
 
 	&--active {
 		transform: translateY(-22px);

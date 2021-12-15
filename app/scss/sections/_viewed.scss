@@ -1,0 +1,17 @@
+.viewed {
+
+	&__title {
+		margin-bottom: 41px;
+	}
+
+	&__list {
+		display: flex;
+	}
+
+	&__item {
+
+		&:not(:last-child) {
+			margin-right: 20px;
+		}
+	}
+}

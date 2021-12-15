@@ -15,6 +15,13 @@ $(function () {
 		nextArrow: '<button type="button" class="slick-arrow arrow-left">next</button>',
 	});
 
+	$('.recommendations__list').slick({
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		prevArrow: '<button type="button" class="slick-arrow arrow-right">prev</button>',
+		nextArrow: '<button type="button" class="slick-arrow arrow-left">next</button>',
+	});
+
 
 	$('.header__input').click(function () {
 		$(this).toggleClass('header__input--active')
@@ -90,4 +97,20 @@ $(function () {
 		$('.header').removeClass('opacity')
 		$('body').removeClass('hidden')
 	})
+
+
+	$('.product__slide-thumb').slick({
+		asNavFor: '.product__slide-big',
+		focusOnSelect: true,
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		vertical: true,
+		draggable: false,
+	});
+
+	$('.product__slide-big').slick({
+		asNavFor: '.product__slide-thumb',
+		draggable: false,
+		arrows: false,
+	});
 });
